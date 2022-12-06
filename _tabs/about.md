@@ -7,5 +7,8 @@ order: 4
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
 
-> Hello! Welcome to `WoojeongPark.github.io` homepage!
-> My name is Woojeong Park
+> Hello! Welcome to `WoojeongPark.github.io` homepage! <br>
+
+> NAME
+- Woojeong Park
+
