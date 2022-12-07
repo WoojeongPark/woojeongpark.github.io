@@ -13,10 +13,6 @@ order: 4
 # Woojeong Park
 Want to be a professional doctor using Mathematics and Computer Sciences
 
-<div id="webaddress">
-<a href="woojeong1018@snu.ac.kr">isaac@applesdofall.org</a>
-</div>
-
 
 ## Currently
 Graduate student, School of Medicine
