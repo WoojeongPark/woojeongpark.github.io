@@ -11,7 +11,7 @@ order: 4
 > Hello! Welcome to `WoojeongPark.github.io` homepage! <br>
 
 # Woojeong Park
-Want to be a professional doctor using Mathematics and Computer Sciences
+Graduate Student who want to be a Medical Doctor using Mathematics and Computer Sciences
 
 
 ## Currently
@@ -25,10 +25,11 @@ Graduate student, School of Medicine
 
 ### Research interests
 - > Applied Mathematics
-- > Artificial intelligence
+- > Artificial intelligence(Machine Learning, Deep Learning)
 - > Data processing using SQL
 - > Statistical Analysis using R
 - > Medicine
+- > High School Mathematical Education
 
 
 ## Education
