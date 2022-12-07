@@ -11,14 +11,14 @@ order: 4
 > Hello! Welcome to `WoojeongPark.github.io` homepage! <br>
 
 # Woojeong Park
-Graduate Student who want to be a Medical Doctor using Mathematics and Computer Sciences
+Graduate Student who wants to be a Medical Doctor using Mathematics and Computer Sciences
 
 
 ## Currently
 Graduate student, School of Medicine
 
 ### Specialized in
-- > Mathematical Science
+- > Mathematics
 - > Computer Science 
 - > Medicine
 
@@ -26,17 +26,17 @@ Graduate student, School of Medicine
 ### Research interests
 - > Applied Mathematics
 - > Artificial intelligence(Machine Learning, Deep Learning)
-- > Data processing using SQL
-- > Statistical Analysis using R
+- > Blockchain and Decentralized System
+- > Data processing and Statistical Analysis
 - > Medicine
-- > High School Mathematical Education
+- > College Scholastic Ability Test Education - Mathematics
 
 
 ## Education
 `2015-2022`
 __Seoul National University__
 - > Bachelor degree
-  - > Major : Mathematical Science
+  - > Major : Mathematics
   - > minor : Computer Science
 
 <!--
@@ -47,8 +47,8 @@ __CHA University__
 -->
 
 ## Awards
-`2015-2022`
-Seoul National University Scholarship
+`--`
+Nothing 
 
 
 ## Publications
@@ -68,6 +68,14 @@ Nothing
 
 
 ## Occupation
-`--`
-Nothing 
+`2015-2022`
+__Undergraduate Student__
+- SNU student
 
+`2017-2018`
+__military service__
+- Military Cook, 628 artillery battalion, 1st Armored Brigade
+
+`2015-2021`
+__Cram School Teacher__
+- College Scholastic Ability Test Education - Mathematics
