@@ -2,13 +2,77 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+layout: Curriculum Vitae
+title: Woojeong Park's CV
 ---
-
+<!--
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
+-->
 
 > Hello! Welcome to `WoojeongPark.github.io` homepage! <br>
 
-> NAME
-- Woojeong Park
+# Woojeong Park
+Want to be a professional doctor using Mathematics and Computer Sciences
+
+<div id="webaddress">
+<a href="woojeong1018@snu.ac.kr">isaac@applesdofall.org</a>
+</div>
+
+
+## Currently
+Graduate student, School of Medicine
+
+### Specialized in
+- Mathematical Science
+- Computer Science 
+- Medicine
+
+
+### Research interests
+- Applied Mathematics
+- Artificial intelligence
+- Data processing using SQL
+- Statistical Analysis using R
+- Medicine
+
+
+## Education
+`2015-2022`
+__Seoul National University__
+- Bachelor degree
+  - Major : Mathematical Science
+  - minor : Computer Science
+
+<!--
+`2023-Now`
+__CHA University__
+- Master degree
+  - Major : Medicine
+-->
+
+## Awards
+`2015-2022`
+Seoul National University Scholarship
+
+
+## Publications
+`--`
+Nothing 
+
+<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
+
+### Journals
+`--`
+Nothing 
+
+### Patents
+`--`
+Nothing 
+
+
+
+## Occupation
+`--`
+Nothing 
 
