@@ -18,25 +18,25 @@ Want to be a professional doctor using Mathematics and Computer Sciences
 Graduate student, School of Medicine
 
 ### Specialized in
-- Mathematical Science
-- Computer Science 
-- Medicine
+- > Mathematical Science
+- > Computer Science 
+- > Medicine
 
 
 ### Research interests
-- Applied Mathematics
-- Artificial intelligence
-- Data processing using SQL
-- Statistical Analysis using R
-- Medicine
+- > Applied Mathematics
+- > Artificial intelligence
+- > Data processing using SQL
+- > Statistical Analysis using R
+- > Medicine
 
 
 ## Education
 `2015-2022`
 __Seoul National University__
-- Bachelor degree
-  - Major : Mathematical Science
-  - minor : Computer Science
+- > Bachelor degree
+  - > Major : Mathematical Science
+  - > minor : Computer Science
 
 <!--
 `2023-Now`
