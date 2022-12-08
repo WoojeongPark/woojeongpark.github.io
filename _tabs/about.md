@@ -79,3 +79,11 @@ __military service__
 `2015-2021`
 __Cram School Teacher__
 - College Scholastic Ability Test Education - Mathematics
+- College Scholastic Ability Test Education - Mathematical Essay
+- College Scholastic Ability TEst Education - Consulting for Entrance
+
+`2021-2022`
+__Junior Researcher__
+- Data Resource Standardization Center
+- Samsung Medical Center, the Institute of Future Medicine
+
