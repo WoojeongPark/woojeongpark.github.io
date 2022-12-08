@@ -129,8 +129,7 @@ $$\underset{\theta}{\text{max}} \Pi_{i=1}^n f_T(t_i;\theta)^{d_i} \{1-F_T(t_i; \
   - $$\log h(t|Age=x) = \log h_0(t) + \beta_1 (x) + \cdots + \beta_p x_p$$
 
 - 둘이 빼면 
-  - $$\frac{h(t|Age=x+1)}{h(t|Age=x)} = \exp(\beta_1)$$
-  - Hazard Ratio(HR)
+  - $$\frac{h(t|Age=x+1)}{h(t|Age=x)} = \exp(\beta_1)$$ : Hazard Ratio(HR)
 
 - HR = 1.75($\beta = 0.56$)
   - 연령이 1세 증가할수록 위험비가 1.75배 증가
