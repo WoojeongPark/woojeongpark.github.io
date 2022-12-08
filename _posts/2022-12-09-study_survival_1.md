@@ -114,11 +114,8 @@ $$\underset{\theta}{\text{max}} \Pi_{i=1}^n f_T(t_i;\theta)^{d_i} \{1-F_T(t_i; \
 
 ### 1.2.4. HR
 - $$\log{h(t | Female)} - \log{h(t|Male)}= \log{ \frac{h(t|Female)}{h(t|Male)}} = \beta_1 \times 1 - \beta_1 \times 0 = \beta_1$$
-- 
-  $
-  \frac{h(t|Female)}{h(t|Male)} = \exp{\beta_1}
-  $
-  : Hazard Ratio(HR)
+- Hazard Ratio(HR) : 
+  $$\frac{h(t|Female)}{h(t|Male)} = \exp{\beta_1}$$
 - if HR=1.25($\beta=0.22$), reference=Male이라면 남자에 비해 여자가 1.25배 위험하다는 뜻이다.
 - 생존분석에서는 $\beta_1$보다는 $\exp(\beta_1)$을 구해서 두 그룹의 위험비율을 생각한다.
 
