@@ -45,7 +45,9 @@ mermaid: true
   
 - 위험함수(hazard function) : $h_T(t) = \frac{f_T(t)}{S_T(t)}, t>0$
 - 위험함수는 $t>0$에서의 조건부 사건 발생률이다.
-- $h_T(t) =\lim_{h->0^+} \frac{1}{h} P(t \leq T < t+h | T \geq t)$, 조건부 순간 사망률
+$$
+h_T(t) =\lim_{h->0^+} \frac{1}{h} P(t \leq T < t+h | T \geq t)
+$$
 - 지수분포의 경우 $h_T(t; \lambda) = \lambda, t>0$
   - 위험률은 시간의 흐름과 관계없이 일정하다.
 - 와이블 분포 : $h_T(t; \alpha, \beta) = (t/ \beta)^{\alpha-1}, t>0$
@@ -55,7 +57,7 @@ mermaid: true
 ## 1.3. 모수적 생존분포의 추정
 
 ### 1.3.1. 최대가능도 추정
-$$\text{max}_\theta \Pi_{i=1}^n f_T(t_i;\theta)^{d_i} \{1-F_T(t_i; \theta)\}^{1-d_i}$$
+$$\underset{\theta}{\text{max}} \Pi_{i=1}^n f_T(t_i;\theta)^{d_i} \{1-F_T(t_i; \theta)\}^{1-d_i}$$
 
 
 ------
@@ -67,7 +69,10 @@ $$\text{max}_\theta \Pi_{i=1}^n f_T(t_i;\theta)^{d_i} \{1-F_T(t_i; \theta)\}^{1-
 ### 2.1.1. 위험함수(Hazard function)
 - 어떤 시간까지 생존했다고 가정했을 때, 바로 다음의 매우 작은 시간간격 사이에서 사건이 발생할 확률
 - 환자가 특정 시험 $t$ 직후에 바로 사망할 확률(=순간위험율)
-- $h(t) = P(T=t | T \geq t) = \frac{f(t)}{S(t)}$
+- 
+  $
+  h(t) = P(T=t | T \geq t) = \frac{f(t)}{S(t)}
+  $
   - $h(t)$ : $t$ 시점에서의 위험을 의미
   - $T \geq t$는 t까지 살아남았을 때를 의미
   
@@ -109,7 +114,11 @@ $$\text{max}_\theta \Pi_{i=1}^n f_T(t_i;\theta)^{d_i} \{1-F_T(t_i; \theta)\}^{1-
 
 ### 1.2.4. HR
 - $$\log{h(t | Female)} - \log{h(t|Male)}= \log{ \frac{h(t|Female)}{h(t|Male)}} = \beta_1 \times 1 - \beta_1 \times 0 = \beta_1$$
-- $\frac{h(t|Female)}{h(t|Male)} = \exp{\beta_1}$ : Hazard Ratio(HR)
+- 
+  $
+  \frac{h(t|Female)}{h(t|Male)} = \exp{\beta_1}
+  $
+  : Hazard Ratio(HR)
 - if HR=1.25($\beta=0.22$), reference=Male이라면 남자에 비해 여자가 1.25배 위험하다는 뜻이다.
 - 생존분석에서는 $\beta_1$보다는 $\exp(\beta_1)$을 구해서 두 그룹의 위험비율을 생각한다.
 
