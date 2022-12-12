@@ -77,7 +77,7 @@ $$T = \frac{\hat{\beta}}{s / \sqrt{s_{xx}}}$$
 Where
 $$
 \begin{align*}
-  \hat{\beta} &= \frac{s_{xy}}{s_{xx}}\\
+  \hat{\beta} &= \frac{s_{xy}}{s_{xx}} \\
   s_{xy} &= \sum (x-\bar{x})(y-\bar{y}) \\
   s_{xx} &= \sum (x-\bar{x})^2
 \end{align*}
