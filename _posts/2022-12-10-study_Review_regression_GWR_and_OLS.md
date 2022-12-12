@@ -74,11 +74,11 @@ $$y_i(\mu) = \beta_{0i}(\mu) + \beta_{1i}(\mu)x_{1i}+ \cdots + \beta_{mi}(\mu)x_
 
 여기서 가중 최소자승법(Weighted Least Square Estimation)을 이용하자. 즉, 
 
-$$\epsilon(\mu) = y_i(\mu) - \beta_{0i}(\mu) + \beta_{1i}(\mu)x_{1i}+ \cdots + \beta_{mi}(\mu)x_{mi}$$
+$$\displaystyle \epsilon(\mu) = y_i(\mu) - \beta_{0i}(\mu) + \beta_{1i}(\mu)x_{1i}+ \cdots + \beta_{mi}(\mu)x_{mi}$$
 
 에 대하여 weight $w_i$를 생각하여
 
-$$\underset{\beta_{ij}, i \in \{1, \cdots,n \}, j\in\{1,\cdots,m\}}{\text{minimize }} \sum_{i=1}^m w_i \{\epsilon_i(\mu)\}^2$$
+$$\displaystyle \underset{\beta_{ij}, i \in \{1, \cdots,n \}, j\in\{1,\cdots,m\}}{\text{minimize }} \sum_{i=1}^m w_i \{\epsilon_i(\mu)\}^2$$
 
 이를 달성하면 된다. 이는 각 $\beta_{ij}$에 대하여 미분하여 얻을 수 있다. 적당한 matrix calculation을 통해 다음을 얻는다.
 
@@ -90,9 +90,9 @@ $$\hat{\beta} = [X^TWX]^{-1} X^T W Y$$
 
 여기서 가중치행렬 $W$는 여러 커널함수중에 하나를 택할 수 있는데, 주로 Gaussian form을 많이 쓴다.
 
-$$w_i(\mu) = \exp (-\frac{1}{2} \left(\frac{d_i(\mu)}{h}\right)^2) <br>
-w_i(\mu) \text{ : 공간좌표에서 관측치 $i$에 대한 가중치} <br>
-d_i(\mu) : \text{ : 관측치 $i$와 공간좌표 $\mu$간의 거리} <br>
+$$\displaystyle w_i(\mu) = \exp (-\frac{1}{2} \left(\frac{d_i(\mu)}{h}\right)^2) \\
+w_i(\mu) \text{ : 공간좌표에서 관측치 $i$에 대한 가중치} \\
+d_i(\mu) : \text{ : 관측치 $i$와 공간좌표 $\mu$간의 거리} \\
 h \text{ : 대역폭}$$
 
 커널함수는 가중치를 만드는 대역폭이 고정되어 있는 __고정방식(Fixed spatial kernel)__, 그리고 관측치 수에 따라 다른 대역폭을 사용하는 __가변방식(adaptive spatial kernel)__ 이 있다. 주로 관측치가 조사지역에 규칙적으로 있으면 전자, 관측치 분포가 다양하면 후자를 쓴다. 확실치 않은 경우, 후자가 안전하다. 
@@ -120,10 +120,10 @@ $$\hat{\beta}_i = (\hat{\beta_{i0}},\hat{\beta_{i1}},\cdots,\hat{\beta_{im}})^T 
 
 $$W_i = 
 \begin{bmatrix}
-w_{i1} & 0 & 0 & \cdots & 0 <br>
-0 & w_{i2} & 0 & \cdots & 0 <br>
-\vdots & \vdots & \vdots & \cdots & \vdots <br>
-0 & 0 & 0 & \cdots & w_{in} <br>
+w_{i1} & 0 & 0 & \cdots & 0 \\
+0 & w_{i2} & 0 & \cdots & 0 \\
+\vdots & \vdots & \vdots & \cdots & \vdots \\
+0 & 0 & 0 & \cdots & w_{in} \\
 \end{bmatrix}$$
 
 그리고 가중함수는 Gauss kernel을 통해서 계산된다.
@@ -178,9 +178,9 @@ __공간적 자기상관이 없는 것으로 판정되면__ 단순회귀분석�
 #### OLS
 $$y_i = \beta_0 + \sum_{j=1}^p X_{ij} \beta_j + \epsilon_i$$
 Where
-$$\beta_0 = \text{ Intercept coefficient}<br>
-\beta_j = \text{ Solpe Coefficient for the $j$th independent variable $X_j$} <br>
-\epsilon_i = \text{ Random error term with N(0, $\sigma^2I$)} <br>
+$$\displaystyle \beta_0 = \text{ Intercept coefficient}\\
+\beta_j = \text{ Solpe Coefficient for the $j$th independent variable $X_j$} \\
+\epsilon_i = \text{ Random error term with N(0, $\sigma^2I$)} \\
 I = n \times n \text{ identity matrix} $$
 
 In the matrix notation
@@ -196,9 +196,9 @@ T-test(p-value) for eaach parameter estimates can be perforemd to see whether th
 $$T = \frac{\hat{\beta}}{s / \sqrt{s_{xx}}}$$
 
 Where
-$$\hat{\beta} = \frac{s_{xy}}{s_{xx}}<br>
-s_{xy} = \sum (x-\bar{x})(y-\bar{y}) <br>
-s_{xx} = \sum (x-\bar{x})^2$$
+$$\displaystyle \hat{\beta} = \frac{s_{xy}}{s_{xx}}\\
+\displaystyle s_{xy} = \sum (x-\bar{x})(y-\bar{y}) \\
+\displaystyle s_{xx} = \sum (x-\bar{x})^2$$
 
 Coefficient of determination can be calculated to see how well the model is successful at explaining variability as
 $$R^2 = \frac{S_{xy}^2}{S_{xx}S_{yy}}$$
@@ -206,38 +206,38 @@ $$R^2 = \frac{S_{xy}^2}{S_{xx}S_{yy}}$$
 To check normality assumption, __Shairo-Wilk test__ can be performed
 $$W = \frac{\left( \sum_{i=1}^n a_i x_{(i)} \right)^2}{\sum_{i=1}^n (x_i - \bar{x})^2}$$
 Where
-$$x_{(i)} = \text{ Ordered sample values($x_{(l)}$ is the smallest)} <br>
-a_i = \text{ constants generated from the means, variances and covariances of the order statistics of a sample of size $n$ from a normal distribution.}$$
+$$\displaystyle x_{(i)} = \text{ Ordered sample values($x_{(l)}$ is the smallest)} \\
+\displaystyle a_i = \text{ constants generated from the means, variances and covariances of the order statistics of a sample of size $n$ from a normal distribution.}$$
 __Shairo-Wilk test__ tests the null hypothesis that a sample $x_1, \cdots, x_n$ came from a normally distributed population. The test rejects the null hypothesis if $W$ is too small.
 
 Jarque-Bera test can be also performed for testing the normality assumption.
 $$JB = \frac{n}{6} \left( S^2 + \frac{K^2}{4}\right)$$
 Where
-$$S = \text{Skewness} <br>
-K = \text{Kurtosis} <br>
-n = \text{number of observations}$$
+$$\displaystyle S = \text{Skewness} \\
+\displaystyle K = \text{Kurtosis} \\
+\displaystyle n = \text{number of observations}$$
 이는 카이제곱분포를 따르고, 위의 경우과 같은 귀무가설을 테스트한다.
 
 __The Breusch-Pagan test__ on random coefficients and __White test__ on specification robust can be performed to check the presence of spatial heteroscedasticity (i.e. spatial non-stationarity).
 - Breusch-Pagan Test : whether the estimated variance of the residuals from a regression depend on the values of the independent variables or not.
   
-$$\text{regression : } Y_i = \alpha + \beta X_i + \epsilon_i <br>
-\text{auxiliary regression : } Z_i^2 = \phi + \delta X_i + \nu_i$$
+$$\displaystyle \text{regression : } Y_i = \alpha + \beta X_i + \epsilon_i \\
+\displaystyle \text{auxiliary regression : } Z_i^2 = \phi + \delta X_i + \nu_i$$
 
 Where
-$$i \in \{1, 2,\cdots, N\} <br>
-\mathbb{E}(\epsilon_i) = 0 <br>
-S^2 = \sum \hat{u_i}^2 / N <br>
-Z_i^2 = \sum \hat{u_i}^2 / S^2$$
+$$\displaystyle i \in \{1, 2,\cdots, N\} \\
+\displaystyle \mathbb{E}(\epsilon_i) = 0 \\
+\displaystyle S^2 = \sum \hat{u_i}^2 / N \\
+\displaystyle Z_i^2 = \sum \hat{u_i}^2 / S^2$$
 The testable hypothesis are expressed as follows:
-$$H_0 : \delta = 0 \text{ (homoscedastic error variance)} <br>
-H_a : \delta != 0 \text{ (homoscedastic error variance)}$$
+$$\displaystyle H_0 : \delta = 0 \text{ (homoscedastic error variance)} \\
+\displaystyle H_a : \delta != 0 \text{ (homoscedastic error variance)}$$
 - $\delta=0$이면, 즉 귀무가설 성립 시 empirical error variance는 상수텀이고, 대립가설이 참이면 empirical error variance는 $X$ variable에 대한 함수라고 해석할 수 있다.
 - White : The residuals are computed from the original model and an empirical measure for the error variances is constructed by squaring them.
-$$\text{regression : }Y_i = \alpha + \beta_i X + \beta_2 W + \epsilon_i <br>
+$$\displaystyle \text{regression : }Y_i = \alpha + \beta_i X + \beta_2 W + \epsilon_i \\
 \text{auxiliary regression : } \hat{u_i}^2 = \phi + \delta_1 X_i + \delta_2 W_i + \delta_3 X_2 + \delta_4 W_2 + \delta_5 X_i \times W_i + \nu_i$$
 The testable hypotheses are expressed as follows:
-$$H_0 : \delta = 0 \text{ (homoscedastic error variance)} <br>
+$$\displaystyle H_0 : \delta = 0 \text{ (homoscedastic error variance)} \\
 H_a : \delta \neq 0 \text{ (homoscedastic error variance)}$$
 White test는 등분산성, 이분산성 하에서 least square estimator의 표본분산을 비교한다. 귀무가설이 참이라면, variance에서 발생하는 차이들은 sampling에 의한 오차이지, 근본적 차이에 의한 오차가 아니라고 볼 수 있다.
 
@@ -245,12 +245,12 @@ Spatial autoregression를 보기 위해 __Lagrange Multiplier-Lag statistics__ �
 
 $$LM_{Lag} = \frac{(e'Wy / s^2)^2}{(WXb')MWX\beta / s^2 + tr(W'W + W^2)}$$
 Where
-$$ M = I - X(X'X)^{-1}X'M <br>
-y = \text{vector containing the dependent variable} <br>
-e = \text{vector of OLS residuals} <br>
-W = \text{spatial weights matrix} <br>
-s^2 = e'e / N \text{(ML estimate for residual variance)}<br>
-b = \text{vector of OLS estimates} $$
+$$\displaystyle  M = I - X(X'X)^{-1}X'M \\
+\displaystyle y = \text{vector containing the dependent variable} \\
+\displaystyle e = \text{vector of OLS residuals} \\
+\displaystyle W = \text{spatial weights matrix} \\
+\displaystyle s^2 = e'e / N \text{(ML estimate for residual variance)}\\
+\displaystyle b = \text{vector of OLS estimates} $$
 The Lagrange Multiplier lag Test($LM_{Lag}$)는 $\chi^2$ distribution with one degree of freedom을 갖는다.
 
 ### Spatial Autoregression
@@ -260,19 +260,19 @@ Autocorrelation를 regression modelling process에 추가하여 spatial autoregr
 들을 추가하여 구현가능하다.
 $$y = \rho Wy + X\beta + \epsilon_i$$
 Where
-$$y = \text{$n$ by 1 vector of observations on the dependent variable} <br>
-W = \text{$n$ by $n$ spatial weights matrix that formalizes} <br>
-\rho = \text{spatial autoregressive parameter} <br>
-X = \text{$n$ by $k$ matrix of observations on the exgenous variables with an associated $k$ by 1 regression coefficient vector $\beta$} <br>
-\epsilon = \text{a vector or random error terms}$$
+$$\displaystyle y = \text{$n$ by 1 vector of observations on the dependent variable} \\
+\displaystyle W = \text{$n$ by $n$ spatial weights matrix that formalizes} \\
+\displaystyle \rho = \text{spatial autoregressive parameter} \\
+\displaystyle X = \text{$n$ by $k$ matrix of observations on the exgenous variables with an associated $k$ by 1 regression coefficient vector $\beta$} \\
+\displaystyle \epsilon = \text{a vector or random error terms}$$
 The log-likelihood for the spatial autoregression can be estimated by
 $$\ln L = -\frac{1}{2 \sigma^2} (y-\rho Wy-X\beta)'(y- \rho Wy - X\beta)$$
 The least square estimator and variance for spatial autoregression can be estimated by
-$$\hat{\beta}_{ML} = (X'X)^{-1} X' (y-\lambda Wy) <br>
-\hat{\sigma}_{ML} = (e_o - \rho e_L)'(e_o - \rho e_L)/N$$
+$$\displaystyle \hat{\beta}_{ML} = (X'X)^{-1} X' (y-\lambda Wy) \\
+\displaystyle \hat{\sigma}_{ML} = (e_o - \rho e_L)'(e_o - \rho e_L)/N$$
 Where
-$$e_o = y-X\hat{\beta}_o <br>
-e_L = y-X\hat{\beta}_L$$
+$$\displaystyle e_o = y-X\hat{\beta}_o \\
+\displaystyle e_L = y-X\hat{\beta}_L$$
 
 __Moran's I__ is one the most popular measures of spatial autocorrelation.Similarity between observations for a given variables as a function of spatial distance가 측정된다.
 $$I = \frac{\sum_i^n \sum_j^n W_{ij} (x_i-\bar{x})(x_j-\bar{x})}{S^2 \sum_i^n \sum_j^n W_{ij}}$$
@@ -289,7 +289,7 @@ Then, GWR extends global OLS regression framework as
 
 $$y_i = \beta_0 (u_i, v_i) + \sum_{j=1}^p X_{ij}\beta_j (u_i, v_i) + \epsilon_i$$
 Where
-$$\beta_k(u_i, v_i) = \text{ Continuous function of the location $(u_i, v_i)$ at point $i$} <br>
+$$\displaystyle \beta_k(u_i, v_i) = \text{ Continuous function of the location $(u_i, v_i)$ at point $i$} \\
 \epsilon_i = \text{ Random error term with $N(0, \sigma^2 I)$}$$
 
 In matrix notation,
@@ -299,10 +299,10 @@ Where $\bigotimes$ means componentwise-multiplication.
 The matrix $\beta$ consists of $n$ sets of local parameters, which is given as
 $$\beta = 
 \begin{bmatrix}
-  \beta_0 (u_1, v_1) & \beta_1(u_1, v_1) & \cdots & \beta_k (u_1, v_1) <br>
-  \beta_0 (u_2, v_2) & \beta_1(u_2, v_2) & \cdots & \beta_k (u_2, v_2) <br>
-  \cdots & \cdots & \cdots & \cdots <br>
-  \beta_0 (u_n, v_n) & \beta_1(u_n, v_n) & \cdots & \beta_k (u_n, v_n) <br>
+  \beta_0 (u_1, v_1) & \beta_1(u_1, v_1) & \cdots & \beta_k (u_1, v_1) \\
+  \beta_0 (u_2, v_2) & \beta_1(u_2, v_2) & \cdots & \beta_k (u_2, v_2) \\
+  \cdots & \cdots & \cdots & \cdots \\
+  \beta_0 (u_n, v_n) & \beta_1(u_n, v_n) & \cdots & \beta_k (u_n, v_n) \\
 \end{bmatrix}$$
 
 GWR estimator of $\beta_i$ is given by
@@ -310,14 +310,14 @@ $$\hat{\beta}_i = (X^T W_i X)^{-1} X^T W_i y$$
 Where
 $$W_i = 
 \begin{bmatrix}
-  w_{i1} & 0 & \cdots & 0 <br>
-  0 & w_{i2} & \cdots & 0 <br>
-  \vdots & \vdots & \cdots & \cdots <br>
+  w_{i1} & 0 & \cdots & 0 \\
+  0 & w_{i2} & \cdots & 0 \\
+  \vdots & \vdots & \cdots & \cdots \\
   0 & 0 & \cdots & w_{in} 
 \end{bmatrix}$$
 
 In adoptive kernel, where the regression points are closely spaced, smaller bandwidths are applied than those of when the regression points are widely spaced. The weight of $k$th data point at $i$th regression point is given by
-$$w_{ik} = \left[ 1 - \left(\frac{d_{ik}}{h_i}\right)^2\right]^2 \text{ (when } d_{ik} \leq h_i) <br>
+$$\displaystyle w_{ik} = \left[ 1 - \left(\frac{d_{ik}}{h_i}\right)^2\right]^2 \text{ (when } d_{ik} \leq h_i) \\
 = 0 \text{ (when } d_{ik} > h_i)$$
 
 GWR의 bandwidth는 smoothing function 기능을 한다.
@@ -337,9 +337,9 @@ This technique is only possible when the regression point locations are the same
 The third method for bandwidth selection in GWR employs a technique which minimizes Akaike Information Criterion (AIC) for fitting the best regression model as
 $$AIC_c = 2n \log_e(\hat{\sigma}) + n \log_e(2 \pi) + n \times \frac{n+tr(S)}{n-2-tr(S)}$$
 Where
-$$n = \text{Sample size} <br>
-\hat{\sigma} = \text{Estimated standard deviation of the error term} <br>
-c = \text{subscript for corrected AIC estimate}$$
+$$\displaystyle n = \text{Sample size} \\
+\displaystyle \hat{\sigma} = \text{Estimated standard deviation of the error term} \\
+\displaystyle c = \text{subscript for corrected AIC estimate}$$
 - lower AIC : reality에 가까운 model 
 
 The aim of a __non-stationarity test__ is to examine whether the local variations as generated by GWR are significantly different over space.(차이가 있어야 GWR 사용한 것이 의미가 있음.)
@@ -352,10 +352,10 @@ deviation of the same global parameter
 
 $$F = \frac{RSS_0 / \nu_0}{RSS_w / \nu_w}$$
 Where
-$$ RSS_0 = \text{Residual sum of squares for OLS} <br>
-RSS_w = \text{Residual sum of squares for GWR} <br>
-\nu_0 = \text{Degree of freedoms for OLS} <br>
-\nu_w = \text{Degree of freedoms for GWR}$$
+$$\displaystyle  RSS_0 = \text{Residual sum of squares for OLS} \\
+\displaystyle RSS_w = \text{Residual sum of squares for GWR} \\
+\displaystyle \nu_0 = \text{Degree of freedoms for OLS} \\
+\displaystyle \nu_w = \text{Degree of freedoms for GWR}$$
 
 GWR provides four important diagnostics statistics at each point, which helps to understand information locally. 
 
@@ -371,8 +371,8 @@ $$r_i = \frac{e_i}{\sqrt{MS_{ReS0}}} (i \in \{1, 2, \cdots, n\})$$
 - `local` $R^2$ `statistics` are calculated as
 $$r_i^2 = \frac{TSS_w - RSS_w}{TSS_w}$$
 Where
-$$TSS_w = \sum_j W_{ij} (y_i-\bar{y})^2 \text{ (Geographically weighted total sum of squares)}<br>
-RSS_w = \sum_j w_{ij} (y_i-\bar{y})^2 \text{ (Geographically weighted residual sum of squares)} <br>
+$$TSS_w = \sum_j W_{ij} (y_i-\bar{y})^2 \text{ (Geographically weighted total sum of squares)}\\
+RSS_w = \sum_j w_{ij} (y_i-\bar{y})^2 \text{ (Geographically weighted residual sum of squares)} \\
 w_{ij} = \text{ Weight of data point $j$ at regrssion point $i$}$$
 
 3. __leverage values__
@@ -389,6 +389,6 @@ $$h_{ii} = x_i (X^TX)^{-1}x_i^T$$
 - `Cook's Distance` can be calculated as
 $$D_i = \frac{r_i^2}{p} \times \left( \frac{h_{ii}}{1-h_{ii}}\right)$$
 Where
-$$r_i = \text{Studentized residual}<br>
-h_{ii} = \text{Leverage} <br>
-p = \text{number of variables}$$
+$$\displaystyle r_i = \text{Studentized residual}\\
+\displaystyle h_{ii} = \text{Leverage} \\
+\displaystyle p = \text{number of variables}$$
