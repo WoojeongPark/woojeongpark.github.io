@@ -74,11 +74,11 @@ $$y_i(\mu) = \beta_{0i}(\mu) + \beta_{1i}(\mu)x_{1i}+ \cdots + \beta_{mi}(\mu)x_
 
 여기서 가중 최소자승법(Weighted Least Square Estimation)을 이용하자. 즉, 
 
-$$\displaystyle \epsilon(\mu) = y_i(\mu) - \beta_{0i}(\mu) + \beta_{1i}(\mu)x_{1i}+ \cdots + \beta_{mi}(\mu)x_{mi}$$
+$$\epsilon(\mu) = y_i(\mu) - \beta_{0i}(\mu) + \beta_{1i}(\mu)x_{1i}+ \cdots + \beta_{mi}(\mu)x_{mi}$$
 
 에 대하여 weight $w_i$를 생각하여
 
-$$\displaystyle \underset{\beta_{ij}, i \in \{1, \cdots,n \}, j\in\{1,\cdots,m\}}{\text{minimize }} \sum_{i=1}^m w_i \{\epsilon_i(\mu)\}^2$$
+$$\underset{\beta_{ij}, i \in \{1, \cdots,n \}, j\in\{1,\cdots,m\}}{\text{minimize }} \sum_{i=1}^m w_i \{\epsilon_i(\mu)\}^2$$
 
 이를 달성하면 된다. 이는 각 $\beta_{ij}$에 대하여 미분하여 얻을 수 있다. 적당한 matrix calculation을 통해 다음을 얻는다.
 
@@ -90,10 +90,10 @@ $$\hat{\beta} = [X^TWX]^{-1} X^T W Y$$
 
 여기서 가중치행렬 $W$는 여러 커널함수중에 하나를 택할 수 있는데, 주로 Gaussian form을 많이 쓴다.
 
-$$\displaystyle w_i(\mu) = \exp (-\frac{1}{2} \left(\frac{d_i(\mu)}{h}\right)^2) \\
+$$\displaystyle{w_i(\mu) = \exp (-\frac{1}{2} \left(\frac{d_i(\mu)}{h}\right)^2) \\
 w_i(\mu) \text{ : 공간좌표에서 관측치 $i$에 대한 가중치} \\
 d_i(\mu) : \text{ : 관측치 $i$와 공간좌표 $\mu$간의 거리} \\
-h \text{ : 대역폭}$$
+h \text{ : 대역폭}}$$
 
 커널함수는 가중치를 만드는 대역폭이 고정되어 있는 __고정방식(Fixed spatial kernel)__, 그리고 관측치 수에 따라 다른 대역폭을 사용하는 __가변방식(adaptive spatial kernel)__ 이 있다. 주로 관측치가 조사지역에 규칙적으로 있으면 전자, 관측치 분포가 다양하면 후자를 쓴다. 확실치 않은 경우, 후자가 안전하다. 
 
@@ -178,10 +178,10 @@ __공간적 자기상관이 없는 것으로 판정되면__ 단순회귀분석�
 #### OLS
 $$y_i = \beta_0 + \sum_{j=1}^p X_{ij} \beta_j + \epsilon_i$$
 Where
-$$\displaystyle \beta_0 = \text{ Intercept coefficient}\\
+$$\displaystyle{\beta_0 = \text{ Intercept coefficient}\\
 \beta_j = \text{ Solpe Coefficient for the $j$th independent variable $X_j$} \\
 \epsilon_i = \text{ Random error term with N(0, $\sigma^2I$)} \\
-I = n \times n \text{ identity matrix} $$
+I = n \times n \text{ identity matrix}}$$
 
 In the matrix notation
 $$Y = X \beta + \epsilon$$
@@ -196,9 +196,9 @@ T-test(p-value) for eaach parameter estimates can be perforemd to see whether th
 $$T = \frac{\hat{\beta}}{s / \sqrt{s_{xx}}}$$
 
 Where
-$$\displaystyle \hat{\beta} = \frac{s_{xy}}{s_{xx}}\\
-\displaystyle s_{xy} = \sum (x-\bar{x})(y-\bar{y}) \\
-\displaystyle s_{xx} = \sum (x-\bar{x})^2$$
+$$\displaystyle{\hat{\beta} = \frac{s_{xy}}{s_{xx}}\\
+s_{xy} = \sum (x-\bar{x})(y-\bar{y}) \\
+s_{xx} = \sum (x-\bar{x})^2}$$
 
 Coefficient of determination can be calculated to see how well the model is successful at explaining variability as
 $$R^2 = \frac{S_{xy}^2}{S_{xx}S_{yy}}$$
