@@ -48,18 +48,18 @@ $$d(X, Y) = \| X - Y \|$$
 > ## Definition
 >
 > 거리공간 $X$가 주어졌을 때, $p \in X$, $r>0$에 대하여 
-> <br>
+> 
 > $$B_r(p) = \{x \in X : d(x,p) < r \}$$ 
-> <br>
+> 
 > 을 __$p$를 중심으로 하고 반지름이 $r$인 열린 공(open ball)__ 이라 한다.
 
 
 > ## Definition
 >
 > 거리공간 $X$가 주어졌을 때, 
-> <br>
+> 
 > $$\forall x \in U, \quad \exists \delta>0 \quad \text{such that} \quad B_\delta(x) \subset U$$ 
-> <br>
+> 
 > 를 만족하는 $U \subset X$를 __열린집합(open set)__ 이라 한다.
 
 이는 다음을 만족한다.
@@ -78,7 +78,10 @@ $$d(X, Y) = \| X - Y \|$$
 
 __Note__
 - open set들의 무한 개의 intersection은 open을 유지할 수 없다.
-- 예) $$U_n = \left(-\frac{1}{n}, \frac{1}{n} \right) (n \in \mathbb{N})$$
+- 예) 
+
+$$U_n = \left(-\frac{1}{n}, \frac{1}{n} \right) (n \in \mathbb{N})$$
+
 
 이제 위상공간을 정의하자.
 > ## Definition
