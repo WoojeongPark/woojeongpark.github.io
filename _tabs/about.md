@@ -75,12 +75,13 @@ __Undergraduate Student__
 `2017-2018`
 __military service__
 - Military Cook, 628 artillery battalion, 1st Armored Brigade
-
+<!--
 `2015-2021`
 __Cram School Teacher__
 - College Scholastic Ability Test Education - Mathematics
 - College Scholastic Ability Test Education - Mathematical Essay
 - College Scholastic Ability TEst Education - Consulting for Entrance
+-->
 
 `2021-2022`
 __Junior Researcher__
