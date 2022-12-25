@@ -2,7 +2,7 @@
 title:  "[Linguistics] Medical Terminology for DUMMIES : living for linguistics"
 excerpt: "스터디-영단어 "
 
-categories: [Study, Medicine, Linguistics]
+categories: [Study, Medicine]
 tags:
   - [라틴어, 영어, 의학]
 
