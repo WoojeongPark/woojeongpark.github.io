@@ -39,12 +39,11 @@ __Seoul National University__
   - > Major : Mathematics
   - > minor : Computer Science
 
-<!--
+
 `2023-Now`
 __CHA University__
 - Master degree
   - Major : Medicine
--->
 
 ## Awards
 `--`
