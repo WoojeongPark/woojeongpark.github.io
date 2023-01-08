@@ -15,7 +15,7 @@ Graduate Student who wants to be a Medical Doctor using Mathematics and Computer
 
 
 ## Currently
-Graduate student, School of Medicine
+Graduate student, School of Medicine, CHA University
 
 ### Specialized in
 - > Mathematics
