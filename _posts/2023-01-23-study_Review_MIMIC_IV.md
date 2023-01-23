@@ -140,12 +140,12 @@ mermaid: true
 ---
 
 - ICU 환자 인구통계
-  - ![center](/assets/img/230123/20230116205537.png)  
+  - ![](/assets/img/230123/20230116205537.png)  
 - 심정지로 중환자실에 입원하여 일반 병동으로 퇴원하고, 수술 후 중환자실에 재입원 후 집으로 퇴원하는 환자의 그림
 
 
 ---
-![center](/assets/img/230123/20230116205648.png)  
+![](/assets/img/230123/20230116205648.png)  
   - vital sign : 맨 위에 표시. 초기에 temperature가 많이 측정되었는데, 이는 targeted temperature management를 위함. 다양한 source들은 가운데 표시됨. 
   - 맨 밑에는 laboratory measurements 표시. ICU에서만 vital sign을 자주 측정하지만, lab measurement는 입원기간 내내 사용가능하다.
 
@@ -223,7 +223,7 @@ mermaid: true
 
 ---
 
-- ![center](/assets/img/230123/20230116212941.png)  
+- ![](/assets/img/230123/20230116212941.png)  
   - 투약 정보 시각화 of hadm_id 28503629
   - 회색 선 : 환자가 머무는 동안의 치료 병동 이름
   - bolus는 marker, 연속 주입 시 선으로 표시하고 투약 범위는 박스표시
@@ -262,7 +262,7 @@ mermaid: true
 ### Building on earlier versions of MIMIC
 - MIMIC-III와 동일한 이름을 갖는 테이블은 호환된다.
 - 주요 변경사항
-- ![center](/assets/img/230123/20230116215027.png)  
+- ![](/assets/img/230123/20230116215027.png)  
 - 모든 identifer가 MIMIC-IV 과정에서 재생성되었다. 그래서 MIMIC-III과 데이터 숮비 기간이 겹치더라도(2008-2012), subject_id와 같은 identifier로 연결이 불가능하다. 
 - MIMIC-III(2002-2008) 및 MIMIC-IV(2008-2019) 기간에 걸친 연구를 지우너하기 위해 MIMIC-III Clinical Database CareVue subset을 지원한다. 이는 MIMIC-IV에는 없는 MIMIC-III 만이 갖는 patients data를 제공한다.
 
